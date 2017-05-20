@@ -45,6 +45,15 @@ h3, h4 {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
 }
+/*parallex */
+
+/* Create a Parallax Effect */
+.bg-1, .bg-2, .bg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .list-group-item:last-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
