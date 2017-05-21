@@ -29,8 +29,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">ABOUT</a></li>
-        <li><a href="#tour">PRODUCTS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#products">PRODUCTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
@@ -61,7 +61,7 @@
         <img src="images/coffee_plantation_1.jpg" alt="coffee plantation" width="1200" height="700">
         <div class="carousel-caption">
           <h3>Coffee Plantation</h3>
-          <p>Fair-trade coffe beans</p>
+          <p>Fair-trade coffee beans</p>
         </div>
       </div>
 
@@ -69,7 +69,7 @@
         <img src="images/coffee_plantation_2.jpg" alt="coffee plantation" width="1200" height="700">
         <div class="carousel-caption">
           <h3>Coffee Plantation</h3>
-          <p>Fair-trade coffe beans</p>
+          <p>Fair-trade coffee beans</p>
         </div>
       </div>
 
@@ -94,7 +94,7 @@
 </div>
 
 <!-- Container (Employee Section) -->
-<div id="band" class="container text-center">
+<div id="about" class="container text-center">
   <h3>Tangletown Coffee Roasters</h3>
   <p><em>We love all things coffee!</em></p>
   <p>Locally sourced fair trade coffee beans roasted to perfection in the heart of Seattle's Green Lake's Tangletown neighborhood.</p>
@@ -137,15 +137,15 @@
 </div>
 
 <!-- Container (Product Section) -->
-<div id="tour" class="bg-1">
+<div id="products" class="bg-1">
   <div class="container">
     <h3 class="text-center">Try our coffee</h3>
     <p class="text-center">Current coffees available to try<br> Try a free sample!</p>
-    <ul class="list-group">
+  <!--  <ul class="list-group">
       <li class="list-group-item">Jamaican Blue Mountain <span class="label label-danger">Sold Out!</span></li>
       <li class="list-group-item">Sumatra <span class="label label-success">Available Now!</span></li>
       <li class="list-group-item">Rain City Blend <span class="badge">Available Now!</span></li>
-    </ul>
+    </ul>-->
 
     <div class="row text-center">
       <div class="col-sm-4">
@@ -214,7 +214,7 @@
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
   <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>Let us know how you heard of us!</em></p>
+  <p class="text-center"><em>Feel free to contact us about upcoming events!</em></p>
 
   <div class="row">
     <div class="col-md-4">
@@ -234,7 +234,15 @@
       </div>
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
       <br>
-      <div class="row">
+      <h5>How did you hear about us?</h5>
+                 <div class="checkbox">
+                   <label><input type="checkbox">Google&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                   <label><input type="checkbox">Facebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                   <label><input type="checkbox">Twitter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                   <label><input type="checkbox">News Article&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                   <label><input type="checkbox">Other&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+               </div>
+            <div class="row">
         <div class="col-md-12 form-group">
           <button class="btn pull-right" type="submit">Send</button>
         </div>
@@ -244,23 +252,27 @@
   <br>
   <h3 class="text-center">From The Blog</h3>
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Tangletown Coffee Roasters</a></li>
+    <li class="active"><a data-toggle="tab" href="#home">Family Direct Trade</a></li>
     <li><a data-toggle="tab" href="#menu1">History of our company</a></li>
-    <li><a data-toggle="tab" href="#menu2">Partners</a></li>
+    <li><a data-toggle="tab" href="#menu2">Roasting</a></li>
   </ul>
 
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
-      <h2>Jane Doe, General Manager</h2>
-      <p>I've been the general manger at Tangletown Coffee Roasters and couldn't be happier with our products and the neighborhood we serve!</p>
+      <h2>John Doe, Owner</h2>
+      <p>Community is the fuel that drives Tangletown Coffee. Family Direct Trade revolves around building both a personal and economic relationship with the coffee farmer and his family. Based on a long-term and ongoing sustainability, this relationship translates to the quality of service and product on the farm and at home</p><br>
+      <p>Coffee and passion alone supports our farmers. By producing high-quality crop yields, their coffee sells well above the commodities per pound.</p><br>
+      <p>Together, we ensure that the pursuit of excellence is well-rewarded. We strive to build relationships that last a lifetime. The result: our farmers enjoy a sustainable way of life, and we have access to their incredible coffees.</p>
     </div>
     <div id="menu1" class="tab-pane fade">
-      <h2>John Doe, Coffee Importer</h2>
-      <p>I travel the world and create frienships and relationships with the coffee growers we work with.</p>
+      <h2>Tangletown Coffee Roaster History</h2>
+      <p>Tangeltown Coffee Roaster opened its doors in August of 2000 in Seattle's Greenlake neighborhood. Starting off small, founder John Doe roasted right out of his Greenlake coffee shop, sharing his passion directly with our local neighborhood customers. Since then he's managed to grow his business and offer incredible coffee throughout the country, partnering with some of the best coffee farmers in the world.</p><br>
+      <p>With an emphasis on quality and relationships, Tangletown Coffee has established itself in some of Seattle's most dynamic neighborhoods. Our location fosters a strong sense of community and respect for coffee. We offer a welcome environment and great place to sample some of Seattle's most exceptional beans.</p>
     </div>
     <div id="menu2" class="tab-pane fade">
-      <h2>Jane Doe, Coffee Roaster</h2>
-      <p>I oversee the day to day coffee roasting processes here at the facility and maintain the quality of our products.</p>
+      <h2>Jane Doe, Master Coffee Roaster</h2>
+      <p>Even a good bean can end up bad. Though well-processed and lovingly grown, a coffee bean depends on the roaster and the roasting process to help it shine. If roasted too dark, the sugars and acidic qualities will be burned to a crisp, leaving behind an oily, flavorless wisp of former granduer. If roasted light, coffee will taste tangy and sour.</p><br>
+      <p>Each coffee is sample roasted and cupped multiple times before being sent to our production roaster. This allows an opportunity to experiment with the unroasted coffee and find the perfect temperature and time by which to bring out all of the delicious flavors. The process requires total attention and a strong knowledge of the coffee being used.</p>
     </div>
   </div>
 </div>
