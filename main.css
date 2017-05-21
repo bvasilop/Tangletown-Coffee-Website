@@ -2,9 +2,10 @@ body {
     font: 400 15px/1.8 Lato, sans-serif;
     color: #777;
 }
-@media (max-width: 300px) {
-p{
-  font-size: 7.75vw;
+@media (max-width: 480px) {
+  .container {
+      padding: 10px 5px;
+
 }
 }
 h3, h4 {
