@@ -20,7 +20,7 @@ $(document).ready(function(){
     } // End if
   });
 })
-
+// Added Google Maps function
 function myMap() {
 var myCenter = new google.maps.LatLng(47.668673, -122.333144);
 var mapProp = {center:myCenter, zoom:15, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
