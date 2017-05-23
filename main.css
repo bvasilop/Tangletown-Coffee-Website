@@ -66,14 +66,6 @@ h3, h4 {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
 }
-
-/*Create a Parallax Effect
-#plant1, #plant2 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
 .list-group-item:last-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -171,4 +163,5 @@ textarea {
 .w3-padding-64 {
     padding-top: 15px!important;
     padding-bottom: 15px!important;
+    background-color: #2d2d30;
 }
