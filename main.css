@@ -2,7 +2,7 @@ body {
     font: 400 15px/1.8 Lato, sans-serif;
     color: #777;
 }
-@media  (max-width: 500px) {
+@media  (max-width: 600px) {
   .container {
       padding: 15px 15px;
 }
@@ -56,6 +56,9 @@ h3, h4 {
 @media (max-width: 600px) {
   .carousel-caption {
     display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+  #content {
+    padding: 0 5% 0 15%;
   }
 }
 .bg-1 {
