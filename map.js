@@ -28,3 +28,11 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
           infowindow.open(map, marker);
         });
       }
+
+
+google.maps.event.addDomListener(window, 'load', myMap);
+google.maps.event.addDomListener(window, "resize", function() {
+ var center = map.getCenter();
+ google.maps.event.trigger(map, "resize");
+ map.setCenter(center);
+});
