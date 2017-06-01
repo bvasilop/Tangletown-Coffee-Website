@@ -118,7 +118,8 @@ $(document).on('ready', function(){
             },
             "card-number": {
                 required: true,
-                creditcard: true
+                creditcard: true,
+                
             },
             "cvv": {
                 required: true,
