@@ -4,14 +4,14 @@
   <title>Tangletown Coffee Roasters</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya|Bevan|Sanchez|Source+Sans+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="main.css">
+ <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -116,68 +116,169 @@
 <div id="products" class="bg-1">
   <div class="container">
     <h3 class="text-center">Try our coffee</h3>
-    <p class="text-center">Current coffees available<br> Try a free sample!</p>
+    <p class="text-center">Current coffees available<br> Buy now!</p>
       <div class="row text-center">
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="thumbnail">
-          <img src="images/coffee-beans-1.jpg" alt="coffe cup" width="400" height="300">
+          <img src="images/coffee-beans-1.jpg" alt="coffee cup" width="400" height="300">
           <p><strong>Jamaican Blue Mountain</strong></p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Try one on us!</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy now!</button>
         </div>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="thumbnail">
           <img src="images/coffee-beans-1.jpg" alt="New York" width="400" height="300">
           <p><strong>Sumatra</strong></p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Try one on us!</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy now!</button>
         </div>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="thumbnail">
           <img src="images/coffee-beans-1.jpg" alt="San Francisco" width="400" height="300">
           <p><strong>Rain City Blend</strong></p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Try one on us!</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy now!</button>
         </div>
       </div>
     </div>
   </div>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4><span class="glyphicon glyphicon-gift"></span>Tangletown Coffee</h4>
+      <!-- Modal -->
+      <!--<div class="container">-->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog modal-lg">
+      <p class="lead">Please note: This form is only for validation demonstration purposes. Do not enter real payment information; please use imaginary data.</p>
+      <form class="form-horizontal" role="form" action="thank-you.html" method="get" id="order-form">
+      <!-- Customer Information -->
+      <fieldset>
+        <h3>Customer Information</h3>
+        <div class="form-group required">
+          <label class="col-sm-3 control-label" for="your-name"><span class="glyphicon glyphicon-question-sign" title="Your first and last name."></span> Your Name</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="your-name" id="your-name" placeholder="First &amp; Last Name" required>
+          </div>
         </div>
-        <div class="modal-body">
-          <form role="form">
-            <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-gift"></span> We'd love to get to know you!</label>
-              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required name="Name">
+        <div class="form-group required">
+          <label class="col-sm-3 control-label" for="your-address">Address:</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="your-address" id="your-address" placeholder="Your street address" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label" for="your-address2"></label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="your-address2" id="Your-address2" placeholder="Optional">
+          </div>
+        </div>
+        <div class="form-group required">
+          <label class="col-sm-3 control-label" for="your-city">City:</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="your-city" id="your-city" placeholder="Your city" required>
+          </div>
+        </div>
+        <div class="form-group required">
+          <label class="col-sm-3 control-label" for="your-state"><span class="glyphicon glyphicon-question-sign" title="Two-letter state abbreviation."></span> State</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="your-state" id="your-state" required>
+          </div>
+        </div>
+        <div class="form-group required">
+          <label class="col-sm-3 control-label" for="your-zip"><span class="glyphicon glyphicon-question-sign" title="US ZIP code only."></span> ZIP</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="your-zip" id="your-zip" placeholder="Your zip code" required>
+          </div>
+        </div>
+      </fieldset>
+      <!-- Payment Details -->
+      <fieldset>
+        <h3>Payment Details</h3>
+        <p><b>Note:</b> This is a fictitious page; do not enter real payment information.</p>
+        <div class="form-group required">
+           <label class="col-sm-3 control-label" for="card-holder-name"><span class="glyphicon glyphicon-question-sign" title="First and last name shown on card."></span> Name on Card</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card-holder's name" required>
+          </div>
+        </div>
+        <div class="form-group required">
+          <label class="col-sm-3 control-label" for="card-number"><span class="glyphicon glyphicon-question-sign" title="Test card number: XXXX XXXX XXXX XXXX"></span> Card Number</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number" required>
+          </div>
+        </div>
+        <div class="form-group required">
+          <label class="col-sm-3 control-label" for="expiry-month">Expiration Date:</label>
+          <div class="col-sm-9">
+            <div class="row">
+              <div class="col-xs-3">
+                <select class="form-control col-sm-2" name="expiry-month" id="expiry-month" required>
+                  <option>Month</option>
+                  <option value="01">Jan (01)</option>
+                  <option value="02">Feb (02)</option>
+                  <option value="03">Mar (03)</option>
+                  <option value="04">Apr (04)</option>
+                  <option value="05">May (05)</option>
+                  <option value="06">June (06)</option>
+                  <option value="07">July (07)</option>
+                  <option value="08">Aug (08)</option>
+                  <option value="09">Sep (09)</option>
+                  <option value="10">Oct (10)</option>
+                  <option value="11">Nov (11)</option>
+                  <option value="12">Dec (12)</option>
+                </select>
+              </div>
+              <div class="col-xs-3 required">
+                <select class="form-control" name="expiry-year" required>
+                  <option value="15">2015</option>
+                  <option value="16">2016</option>
+                  <option value="17">2017</option>
+                  <option value="18">2018</option>
+                  <option value="19">2019</option>
+                  <option value="20">2020</option>
+                  <option value="21">2021</option>
+                  <option value="22">2022</option>
+                  <option value="23">2023</option>
+                </select>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
-              <input type="text" class="form-control" form-control-success id="usrname" placeholder="Enter email" required name="Email">
+          </div>
+        </div>
+        <div class="form-group required">
+           <label class="col-sm-3 control-label" for="cvv"><span class="glyphicon glyphicon-question-sign" title="Three-digit code from back of card."></span> Card CVV</label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code" required>
+          </div>
+        </div>
+      </fieldset>
+      <!-- Shipping Details -->
+      <fieldset>
+        <h3>Shipping Details</h3>
+        <div class="form-group required">
+          <label class="col-sm-3 control-label" for="shipping-method">Shipping Method:</label>
+          <div class="col-sm-9">
+            <div class="row">
+              <div class="col-xs-3 col-md-4">
+                <select class="form-control col-sm-2" name="shipping-method" id="shipping-method" required>
+                  <option>Select One</option>
+                  <option value="Standard">Standard (3-5 days)</option>
+                  <option value="Overnight">Overnight </option>
+                  <option value="Expedited">Expedited (1-3 days)</option>
+                </select>
+              </div>
             </div>
-              <button type="submit" class="btn btn-block">Click for free coffee coupon!
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
-          </form>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Cancel
-          </button>
+         <div class="form-group required">
+          <div class="col-sm-offset-3 col-sm-9">
+            <button type="submit" class="btn btn-warning" <span class="glyphicon glyphicon-shopping-cart" href= "thank-you.html" >Submit Order</button>
+          </div>
         </div>
-      </div>
-    </div>
+      </fieldset>
+    </form>
   </div>
+</div>
 </div>
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
   <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>Feel free to contact us about upcoming events!</em></p>
+  <p class="text-center"><em>Join our mailing list!</em></p>
     <div class="row">
     <div class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
       <p>Drop by or drop us a note.</p>
@@ -186,13 +287,14 @@
       <p><span class="glyphicon glyphicon-envelope"></span> Email: mail@mail.com</p>
     </div>
     <br>
-    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
       <div class="row">
+        <form class="form-group" role="form" action="contact.html" method="get" id="contact-info">
         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required name="Name">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" data-toggle="tooltip" data-placement="top" title="Please enter your name" required name="Name">
         </div>
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required name="Email">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" data-toggle="tooltip" data-placement="top" title="Please enter your email" required name="Email">
         </div>
       </div>
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
@@ -207,12 +309,12 @@
                </div>
             <div class="row">
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
+          <button class="btn btn-primary btn-lrg" type="submit" href="thank-you.html" role="button">Send</button>
+        </div>
         </div>
       </div>
     </div>
-  </div>
-  <br>
+    <br>
   <h3 class="text-center">From The Blog</h3>
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home">Family direct trade</a></li>
@@ -237,15 +339,15 @@
       <p>Each coffee is sample roasted and cupped multiple times before being sent to our production roaster. This allows an opportunity to experiment with the unroasted coffee and find the perfect temperature and time by which to bring out all of the delicious flavors. The process requires total attention and a strong knowledge of the coffee being used.</p>
     </div>
   </div>
-</div>
-<!-- Add Google Maps -->
-
-<div id="googleMap"></div>
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  </div>
+  <!-- Add Google Maps -->
+  <div id="googleMap"></div>
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br>
+  </a>
+  <br>
   <div class="w3-xlarge w3-section">
     <a href="https://www.facebook.com" target="_blank" data-toggle="tooltip" title="Visit us on Facebook">
     <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
@@ -263,11 +365,20 @@
   </footer>
   </div>
   </footer>
-  <script src="main.js"></script>
-  <script src="map.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4fFKPM5T-9AYR5x1DvqENwS3Wkh-c55Q&callback=myMap"></script>
-  <!--<script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4fFKPM5T-9AYR5x1DvqENwS3Wkh-c55Q&callback=myMap">
-</script>-->
+  <!--Jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--Migrate older jQuery code to jQuery 3.0+-->
+  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+  <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"><\/script>')</script>
+      <!--Bootstrap-->
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <!--Jquery validation plugin-->
+       <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+       <!--<script src="js/vendor/jquery.validate.min.js"></script>-->
+    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4fFKPM5T-9AYR5x1DvqENwS3Wkh-c55Q&callback=myMap"></script>
 </body>
 </html>

@@ -1,23 +1,26 @@
 body {
-    font: 400 15px/1.8 Lato, sans-serif;
+    font: 400 15px/1.8 "Sanchez", sans-serif;
     color: #777;
 }
+/* adjusting for phone screen sizes */
 @media  (max-width: 600px) {
   .container {
       padding: 15px 15px;
 }
 }
-
+/* adjusting for tablet screen sizes */
 @media  (max-width: 768px) {
   .container {
       padding: 40px 40px;
 }
 }
+/* adjusting for laptop screen sizes */
 @media  (max-width: 992px) {
   .container {
       padding: 35px 35px;
 }
 }
+/* adjusting for television and large monitor screen sizes */
 @media  (max-width: 1200px) {
   .container {
       padding: 35px 35px;
@@ -117,7 +120,7 @@ h3, h4 {
     filter: grayscale(100%);
 }
 .navbar {
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat","Sanchez", sans-serif;
     margin-bottom: 0;
     background-color: #2d2d30;
     border: 0;
@@ -171,4 +174,21 @@ textarea {
     padding-top: 15px!important;
     padding-bottom: 15px!important;
     background-color: #2d2d30;
+}
+fieldset {
+  font-family: "Sanchez", Open Sans, sans-serif;
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+
+/* Highlights for Form Validation */
+.form-control.error {
+   border-color:hsl(0, 50%, 50%);
+   background:hsl(0, 50%, 90%);
+}
+
+.error {
+  color: hsl(0, 50%, 50%);
 }

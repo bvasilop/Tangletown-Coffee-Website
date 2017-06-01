@@ -1,5 +1,9 @@
 $(document).ready(function(){
   // Initialize Tooltip
+  //carousel for images
+  $("#myCarousel").carousel({
+    interval: 5500
+  });
   $('[data-toggle="tooltip"]').tooltip();
   // Added smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {

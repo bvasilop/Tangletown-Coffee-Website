@@ -1,4 +1,4 @@
-**wats3020-final-project**
+**WATS 3020-Final-Project**
 
 This project requires building a custom content page, creating one that fits into an imaginary site, using JavaScript, HTML and CSS to make the page attractive and usable.
 
