@@ -1,396 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Tangletown Coffee Roasters</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="images/favicon.ico">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya|Bevan|Sanchez|Source+Sans+Pro" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="main.css">
- <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
- <!--Google Analytics Tracking-->
- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-104101712-1', 'auto');
-  ga('send', 'pageview');
-</script>
+    <title>Tangletown Coffee Roasters</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Bevan|Sanchez|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="main.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <!--Google Analytics Tracking-->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-104101712-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#myPage">Tangletown Coffee</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myPage">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#products">PRODUCTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li class="dropdown">
-        </ul>
-    </div>
-  </div>
-</nav>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="images_comp/barista-1-1600_large_2x.jpg" alt="coffee plantation" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>Seattle's Finest Baristas</h3>
-          <p>Let our expertly trained staff prepare you a perfect cup!</p>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">Tangletown Coffee</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#myPage">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#products">PRODUCTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="item">
-        <img src="images_comp/coffee-pour-1-1600_large_2x.jpg" alt="coffee plantation" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>Chemex Pour Over</h3>
-          <p>Stop in for a cup of our finest pour over coffee!</p>
+    </nav>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images_comp/barista-1-1600_large_2x.jpg" alt="coffee plantation" width="1200" height="700">
+                <div class="carousel-caption">
+                    <h3>Seattle's Finest Baristas</h3>
+                    <p>Let our expertly trained staff prepare you a perfect cup!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images_comp/coffee-pour-1-1600_large_2x.jpg" alt="coffee plantation" width="1200" height="700">
+                <div class="carousel-caption">
+                    <h3>Chemex Pour Over</h3>
+                    <p>Stop in for a cup of our finest pour over coffee!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images_comp/coffee-cup-1-1600_large_2x.jpg" alt="coffee beans" width="1200" height="700">
+                <div class="carousel-caption">
+                    <h3>Roasted and brewed in house</h3>
+                    <p>Stop by for a cup!</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="item">
-        <img src="images_comp/coffee-cup-1-1600_large_2x.jpg" alt="coffee beans" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>Roasted and brewed in house</h3>
-          <p>Stop by for a cup!</p>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- Container (Facilities Section) -->
+    <div id="about" class="container text-center">
+        <h3>Tangletown Coffee Roasters</h3>
+        <p><em>We love all things coffee!</em></p>
+        <p>Locally sourced fair trade coffee beans roasted to perfection in the heart of Seattle's Green Lake
+            neighborhood.</p>
+        <br>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <p class="text-center"><strong>Our drum roaster</strong></p><br>
+                <a href="#demo" data-toggle="collapse">
+                    <img src="images_comp/coffee_roaster_3-1600_large_2x.jpeg" class="img-circle person" alt="Random Name" width="255" height="255">
+                </a>
+                <div id="demo" class="collapse">
+                    <p>We utilize a state of the art commercial drum roaster that not only produces excellent results,
+                        but also offers complete control and flexibility of the drum. The drum roasters are capable of
+                        being configured to produce well developed light roasts characteristic of the best air roasters
+                        as well as being configured on the very next roast for dark, sweet, and syrupy Italian roasts.
+                        Simply put, our drum roaster has the ability to do what the others can do, and a whole lot more.
+                    </p><br>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <p class="text-center"><strong>Our roasting process</strong></p><br>
+                <a href="#demo2" data-toggle="collapse">
+                    <img src="images_comp/roasting_facility_1-1600_large_2x.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+                </a>
+                <div id="demo2" class="collapse">
+                    <p>Tangletown Coffee Roasters starts with top-quality beans harvested from the world's greatest
+                        estates. Our state of the art roasting plant utilizes a proprietary system using custom-designed
+                        pneumatic tubes to produce the freshest cup of coffee on the market today. When utilizing some
+                        of the finest beans available, and best practices, you can expect a finished, hand crafted
+                        product that is lovingly produced, packaged and shipped to consumers all over the world.</p><br>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <p class="text-center"><strong>Our roasting facility</strong></p><br>
+                <a href="#demo3" data-toggle="collapse">
+                    <img src="images_comp/roasting_facility_2-1600_large_2x.png" class="img-circle person" alt="Random Name" width="255" height="255">
+                </a>
+                <div id="demo3" class="collapse">
+                    <p>Our roasting plant first holds "green" beans in a series of clear storage columns. When it's time
+                        for roasting, the beans are automatically measured out by weight and then "whooshed" into the
+                        roaster via bursts of air through clear pneumatic tubes. It's exciting to watch, but the process
+                        isn't just for show: Those curved tubes are specifically designed to keep the freshly roasted
+                        beans from breaking in transit. They are then dispensed into retail bags at the peak of
+                        freshness.</p><br>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
-<!-- Container (Facilities Section) -->
-<div id="about" class="container text-center">
-  <h3>Tangletown Coffee Roasters</h3>
-  <p><em>We love all things coffee!</em></p>
-  <p>Locally sourced fair trade coffee beans roasted to perfection in the heart of Seattle's Green Lake neighborhood.</p>
-  <br>
-  <div class="row">
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <p class="text-center"><strong>Our drum roaster</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
-        <img src="images_comp/coffee_roaster_3-1600_large_2x.jpeg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo" class="collapse">
-        <p>We utilize a state of the art commercial drum roaster that not only produces excellent results, but also offers complete control and flexibility of the drum. The drum roasters are capable of being configured to produce well developed light roasts characteristic of the best air roasters as well as being configured on the very next roast for dark, sweet, and syrupy Italian roasts. Simply put, our drum roaster has the ability to do what the others can do, and a whole lot more.</p><br>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <p class="text-center"><strong>Our roasting process</strong></p><br>
-      <a href="#demo2" data-toggle="collapse">
-        <img src="images_comp/roasting_facility_1-1600_large_2x.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo2" class="collapse">
-        <p>Tangletown Coffee Roasters starts with top-quality beans harvested from the world's greatest estates. Our state of the art roasting plant utilizes a proprietary system using custom-designed pneumatic tubes to produce the freshest cup of coffee on the market today. When utilizing some of the finest beans available, and best practices, you can expect a finished, hand crafted product that is lovingly produced, packaged and shipped to consumers all over the world.</p><br>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <p class="text-center"><strong>Our roasting facility</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="images_comp/roasting_facility_2-1600_large_2x.png" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Our roasting plant first holds "green" beans in a series of clear storage columns. When it's time for roasting, the beans are automatically measured out by weight and then "whooshed" into the roaster via bursts of air through clear pneumatic tubes. It's exciting to watch, but the process isn't just for show: Those curved tubes are specifically designed to keep the freshly roasted beans from breaking in transit. They are then dispensed into retail bags at the peak of freshness.</p><br>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Container (Product Section) -->
-<div id="products" class="bg-1">
-  <div class="container">
-    <h3 class="text-center">Try our coffee</h3>
-    <p class="text-center">Current coffees available<br></p>
-      <div class="row text-center">
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <div class="thumbnail">
-          <img src="images_comp/coffee-beans-1-1600_large_2x.jpg" alt="coffee cup" width="400" height="300">
-          <p><strong>Jamaican Blue Mountain</strong></p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy now!</button>
+    <!-- Container (Product Section) -->
+    <div id="products" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">Try our coffee</h3>
+            <p class="text-center">Current coffees available<br></p>
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <img src="images_comp/coffee-beans-1-1600_large_2x.jpg" alt="coffee cup" width="400" height="300">
+                        <p><strong>Jamaican Blue Mountain</strong></p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Buy now!</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <img src="images_comp/coffee-beans-1-1600_large_2x.jpg" alt="New York" width="400" height="300">
+                        <p><strong>Sumatra</strong></p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Buy now!</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <img src="images_comp/coffee-beans-1-1600_large_2x.jpg" alt="San Francisco" width="400" height="300">
+                        <p><strong>Rain City Blend</strong></p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Buy now!</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <div class="thumbnail">
-          <img src="images_comp/coffee-beans-1-1600_large_2x.jpg" alt="New York" width="400" height="300">
-          <p><strong>Sumatra</strong></p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy now!</button>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <div class="thumbnail">
-          <img src="images_comp/coffee-beans-1-1600_large_2x.jpg" alt="San Francisco" width="400" height="300">
-          <p><strong>Rain City Blend</strong></p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy now!</button>
-        </div>
-      </div>
-    </div>
-  </div>
-      <!-- Modal -->
-      <!--<div class="container">-->
+        <!-- Modal -->
+        <!--<div class="container">-->
         <div class="modal fade" id="myModal" role="dialog">
-          <div class="modal-dialog modal-lg">
-      <p class="lead">Please note: This form is only for validation demonstration purposes. Do not enter real payment information; please use imaginary data.</p>
-      <form class="form-horizontal" role="form" action="thank-you.html" method="get" id="order-form">
-      <!-- Customer Information -->
-      <fieldset>
-        <h3>Customer Information</h3>
-        <div class="form-group required">
-          <label class="col-sm-3 control-label" for="your-name"><span class="glyphicon glyphicon-question-sign" title="Your first and last name."></span> Your Name</label>
-          <div class="col-sm-9">
-            <input type="text" class="form-control" name="your-name" id="your-name" placeholder="First &amp; Last Name" required>
-          </div>
-        </div>
-        <div class="form-group required">
-          <label class="col-sm-3 control-label" for="your-address">Address:</label>
-          <div class="col-sm-9">
-            <input type="text" class="form-control" name="your-address" id="your-address" placeholder="Your street address" required>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-3 control-label" for="your-address2">Address 2:</label>
-          <div class="col-sm-9">
-            <input type="text" class="form-control" name="your-address2" id="Your-address2" placeholder="Optional">
-          </div>
-        </div>
-        <div class="form-group required">
-          <label class="col-sm-3 control-label" for="your-city">City:</label>
-          <div class="col-sm-9">
-            <input type="text" class="form-control" name="your-city" id="your-city" placeholder="Your city" required>
-          </div>
-        </div>
-        <div class="form-group required">
-          <label class="col-sm-3 control-label" for="your-state"><span class="glyphicon glyphicon-question-sign" title="Two-letter state abbreviation."></span> State</label>
-          <div class="col-sm-9">
-            <input type="text" class="form-control" name="your-state" id="your-state" required>
-          </div>
-        </div>
-        <div class="form-group required">
-          <label class="col-sm-3 control-label" for="your-zip"><span class="glyphicon glyphicon-question-sign" title="US ZIP code only."></span> ZIP</label>
-          <div class="col-sm-9">
-            <input type="text" class="form-control" name="your-zip" id="your-zip" placeholder="Your zip code" required>
-          </div>
-        </div>
-      </fieldset>
-      <!-- Payment Details -->
-      <fieldset>
-        <h3>Payment Details</h3>
-        <p><b>Note:</b> This is a fictitious page; do not enter real payment information.</p>
-        <div class="form-group required">
-           <label class="col-sm-3 control-label" for="card-holder-name"><span class="glyphicon glyphicon-question-sign" title="First and last name shown on card."></span> Name on Card</label>
-          <div class="col-sm-9">
-            <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card-holder's name" required>
-          </div>
-        </div>
-        <div class="form-group required">
-          <label class="col-sm-3 control-label" for="card-number"><span class="glyphicon glyphicon-question-sign" title="Test card number: 0000 0000 0000 0000"></span> Card Number</label>
-          <div class="col-sm-9">
-            <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number" required>
-          </div>
-        </div>
-        <div class="form-group required">
-          <label class="col-xs-4 col-sm-3 control-label" for="expiry-month">Expiration Date:</label>
-          <div class="col-sm-9">
-            <div class="row">
-              <div class="col-xs-4">
-                <select class="form-control col xs-4 col-sm-2" name="expiry-month" id="expiry-month" required>
-                  <option>Month</option>
-                  <option value="01">Jan (01)</option>
-                  <option value="02">Feb (02)</option>
-                  <option value="03">Mar (03)</option>
-                  <option value="04">Apr (04)</option>
-                  <option value="05">May (05)</option>
-                  <option value="06">June (06)</option>
-                  <option value="07">July (07)</option>
-                  <option value="08">Aug (08)</option>
-                  <option value="09">Sep (09)</option>
-                  <option value="10">Oct (10)</option>
-                  <option value="11">Nov (11)</option>
-                  <option value="12">Dec (12)</option>
-                </select>
-              </div>
-              <div class="col-xs-4 required">
-                <select class="form-control" name="expiry-year" required>
-                  <option value="15">2015</option>
-                  <option value="16">2016</option>
-                  <option value="17">2017</option>
-                  <option value="18">2018</option>
-                  <option value="19">2019</option>
-                  <option value="20">2020</option>
-                  <option value="21">2021</option>
-                  <option value="22">2022</option>
-                  <option value="23">2023</option>
-                </select>
-              </div>
+            <div class="modal-dialog modal-lg">
+                <p class="lead">Please note: This form is only for validation demonstration purposes. Do not enter real
+                    payment information; please use imaginary data.</p>
+                <form class="form-horizontal" role="form" action="thank-you.html" method="get" id="order-form">
+                    <!-- Customer Information -->
+                    <fieldset>
+                        <h3>Customer Information</h3>
+                        <div class="form-group required">
+                            <label class="col-sm-3 control-label" for="your-name"><span class="glyphicon glyphicon-question-sign" title="Your first and last name."></span>
+                                Your Name</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="your-name" id="your-name" placeholder="First &amp; Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-3 control-label" for="your-address">Address:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="your-address" id="your-address" placeholder="Your street address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="your-address2">Address 2:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="your-address2" id="Your-address2" placeholder="Optional">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-3 control-label" for="your-city">City:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="your-city" id="your-city" placeholder="Your city" required>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-3 control-label" for="your-state"><span class="glyphicon glyphicon-question-sign" title="Two-letter state abbreviation."></span> State</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="your-state" id="your-state" required>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-3 control-label" for="your-zip"><span class="glyphicon glyphicon-question-sign" title="US ZIP code only."></span>
+                                ZIP</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="your-zip" id="your-zip" placeholder="Your zip code" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Payment Details -->
+                    <fieldset>
+                        <h3>Payment Details</h3>
+                        <p><b>Note:</b> This is a fictitious page; do not enter real payment information.</p>
+                        <div class="form-group required">
+                            <label class="col-sm-3 control-label" for="card-holder-name"><span class="glyphicon glyphicon-question-sign" title="First and last name shown on card."></span> Name on Card</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card-holder's name" required>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-3 control-label" for="card-number"><span class="glyphicon glyphicon-question-sign" title="Test card number: 0000 0000 0000 0000"></span> Card Number</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number" required>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-xs-4 col-sm-3 control-label" for="expiry-month">Expiration Date:</label>
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <select class="form-control col xs-4 col-sm-2" name="expiry-month" id="expiry-month" required>
+                                            <option>Month</option>
+                                            <option value="01">Jan (01)</option>
+                                            <option value="02">Feb (02)</option>
+                                            <option value="03">Mar (03)</option>
+                                            <option value="04">Apr (04)</option>
+                                            <option value="05">May (05)</option>
+                                            <option value="06">June (06)</option>
+                                            <option value="07">July (07)</option>
+                                            <option value="08">Aug (08)</option>
+                                            <option value="09">Sep (09)</option>
+                                            <option value="10">Oct (10)</option>
+                                            <option value="11">Nov (11)</option>
+                                            <option value="12">Dec (12)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-4 required">
+                                        <select class="form-control" name="expiry-year" required>
+                                            <option value="15">2015</option>
+                                            <option value="16">2016</option>
+                                            <option value="17">2017</option>
+                                            <option value="18">2018</option>
+                                            <option value="19">2019</option>
+                                            <option value="20">2020</option>
+                                            <option value="21">2021</option>
+                                            <option value="22">2022</option>
+                                            <option value="23">2023</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-xs-3 col-sm-3 control-label" for="cvv"><span class="glyphicon glyphicon-question-sign" title="Three-digit code from back of card."></span> Card CVV</label>
+                            <div class="col-xs-3 col-sm-3">
+                                <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Shipping Details -->
+                    <fieldset>
+                        <h3>Shipping Details</h3>
+                        <div class="form-group required">
+                            <label class="col-xs-4 col-sm-3 control-label" for="shipping-method">Shipping
+                                Method:</label>
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <div class="col-xs-4 col-md-4">
+                                        <select class="form-control col-sm-2" name="shipping-method" id="shipping-method" required>
+                                            <option>Select One</option>
+                                            <option value="Standard">Standard (3-5 days)</option>
+                                            <option value="Overnight">Overnight </option>
+                                            <option value="Expedited">Expedited (1-3 days)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-success" href="thank-you.html">Submit
+                                    Order</button>
+                                <button type="cancel" onclick="window.location.replace('index.html')" value="Cancel" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
-          </div>
         </div>
-        <div class="form-group required">
-           <label class="col-xs-3 col-sm-3 control-label" for="cvv"><span class="glyphicon glyphicon-question-sign" title="Three-digit code from back of card."></span> Card CVV</label>
-          <div class="col-xs-3 col-sm-3">
-            <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code" required>
-          </div>
-        </div>
-      </fieldset>
-      <!-- Shipping Details -->
-      <fieldset>
-        <h3>Shipping Details</h3>
-        <div class="form-group required">
-          <label class="col-xs-4 col-sm-3 control-label" for="shipping-method">Shipping Method:</label>
-          <div class="col-sm-9">
-            <div class="row">
-              <div class="col-xs-4 col-md-4">
-                <select class="form-control col-sm-2" name="shipping-method" id="shipping-method" required>
-                  <option>Select One</option>
-                  <option value="Standard">Standard (3-5 days)</option>
-                  <option value="Overnight">Overnight </option>
-                  <option value="Expedited">Expedited (1-3 days)</option>
-                </select>
-              </div>
+    </div>
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container">
+        <h3 class="text-center">Contact</h3>
+        <p class="text-center"><em>Join our mailing list!</em></p>
+        <div class="row">
+            <div class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
+                <p>Drop by or drop us a note.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Seattle, WA</p>
+                <p><span class="glyphicon glyphicon-phone"></span> Phone: (206) 123-4567</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> Email: mail@mail.com</p>
             </div>
-          </div>
+            <br>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="row">
+                    <form class="form-group" role="form" action="contact.html" method="get" id="contact-info">
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 form-group">
+                            <input class="form-control" id="name" placeholder="Name" type="text" data-toggle="tooltip" data-placement="top" title="Please enter your name" required name="Name">
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 form-group">
+                            <input class="form-control" id="email" placeholder="Email" type="email" data-toggle="tooltip" data-placement="top" title="Please enter your email" required name="Email">
+                        </div>
+                    </form>
+                </div>
+
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                <br>
+                <h5>How did you hear about us?</h5>
+                <div class="checkbox">
+                    <label><input type="checkbox">Google</label>
+                    <label><input type="checkbox">Facebook</label>
+                    <label><input type="checkbox">Twitter</label>
+                    <label><input type="checkbox">News Article</label>
+                    <label><input type="checkbox">Other</label>
+                </div>
+                <div class="row">
+                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 form-group">
+                        <button class="btn btn-primary btn-lrg" type="submit" href="thank-you.html" role="button">Send</button>
+                    </div>
+                </div>
+            </div>
         </div>
-         <div class="form-group required">
-          <div class="col-sm-offset-3 col-sm-9">
-            <button type="submit" class="btn btn-success" <span class="glyphicon glyphicon-shopping-cart" href= "thank-you.html" >Submit Order</button>
-            <button type="cancel" onclick="window.location.replace('index.html')" value="Cancel" class="btn btn-danger" <span class="glyphicon glyphicon-shopping-cart">Cancel</button>
-          </div>
+        <br>
+        <h3 class="text-center">From The Blog</h3>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Family direct trade</a></li>
+            <li><a data-toggle="tab" href="#menu1">History of our company</a></li>
+            <li><a data-toggle="tab" href="#menu2">Roasting process</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h5>John Doe, Owner</h5>
+                <p>Community is the fuel that drives Tangletown Coffee. Family Direct Trade revolves around building
+                    both a personal and economic relationship with the coffee farmer and his family. Based on a
+                    long-term and ongoing sustainability, this relationship translates to the quality of service and
+                    product on the farm and at home</p><br>
+                <p>Coffee and passion alone supports our farmers. By producing high-quality crop yields, their coffee
+                    sells well above the commodities per pound.</p><br>
+                <p>Together, we ensure that the pursuit of excellence is well-rewarded. We strive to build relationships
+                    that last a lifetime. The result: our farmers enjoy a sustainable way of life, and we have access to
+                    their incredible coffees.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h5>Tangletown Coffee Roaster History</h5>
+                <p>Tangeltown Coffee Roasters opened its doors in August of 2000 in Seattle's Green Lake neighborhood.
+                    Starting off small, founder John Doe roasted right out of his Greenlake coffee shop, sharing his
+                    passion directly with our local neighborhood customers. Since then he's managed to grow his business
+                    and offer incredible coffee throughout the country, partnering with some of the best coffee farmers
+                    in the world.</p><br>
+                <p>With an emphasis on quality and relationships, Tangletown Coffee has established itself in some of
+                    Seattle's most dynamic neighborhoods. Our location fosters a strong sense of community and respect
+                    for coffee. We offer a welcome environment and great place to sample some of Seattle's most
+                    exceptional beans.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h5>Jane Doe, Master Coffee Roaster</h5>
+                <p>Even a good bean can end up bad. Though well-processed and lovingly grown, a coffee bean depends on
+                    the roaster and the roasting process to help it shine. If roasted too dark, the sugars and acidic
+                    qualities will be burned to a crisp, leaving behind an oily, flavorless wisp of former granduer. If
+                    roasted light, coffee will taste tangy and sour.</p><br>
+                <p>Each coffee is sample roasted and cupped multiple times before being sent to our production roaster.
+                    This allows an opportunity to experiment with the unroasted coffee and find the perfect temperature
+                    and time by which to bring out all of the delicious flavors. The process requires total attention
+                    and a strong knowledge of the coffee being used.</p>
+            </div>
         </div>
-      </fieldset>
-    </form>
-  </div>
-</div>
-</div>
-<!-- Container (Contact Section) -->
-<div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>Join our mailing list!</em></p>
-    <div class="row">
-    <div class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
-      <p>Drop by or drop us a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Seattle, WA</p>
-      <p><span class="glyphicon glyphicon-phone"></span> Phone: (206) 123-4567</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> Email: mail@mail.com</p>
     </div>
-    <br>
-      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-      <div class="row">
-        <form class="form-group" role="form" action="contact.html" method="get" id="contact-info">
-        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" data-toggle="tooltip" data-placement="top" title="Please enter your name" required name="Name">
-        </div>
-        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" data-toggle="tooltip" data-placement="top" title="Please enter your email" required name="Email">
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <br>
-      <h5>How did you hear about us?</h5>
-                 <div class="checkbox">
-                   <label><input type="checkbox">Google&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                   <label><input type="checkbox">Facebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                   <label><input type="checkbox">Twitter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                   <label><input type="checkbox">News Article&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                   <label><input type="checkbox">Other&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-               </div>
-            <div class="row">
-        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 form-group">
-          <button class="btn btn-primary btn-lrg" type="submit" href="thank-you.html" role="button">Send</button>
-        </div>
-        </div>
-      </div>
-    </div>
-    <br>
-  <h3 class="text-center">From The Blog</h3>
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Family direct trade</a></li>
-    <li><a data-toggle="tab" href="#menu1">History of our company</a></li>
-    <li><a data-toggle="tab" href="#menu2">Roasting process</a></li>
-  </ul>
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h5>John Doe, Owner</h5>
-      <p>Community is the fuel that drives Tangletown Coffee. Family Direct Trade revolves around building both a personal and economic relationship with the coffee farmer and his family. Based on a long-term and ongoing sustainability, this relationship translates to the quality of service and product on the farm and at home</p><br>
-      <p>Coffee and passion alone supports our farmers. By producing high-quality crop yields, their coffee sells well above the commodities per pound.</p><br>
-      <p>Together, we ensure that the pursuit of excellence is well-rewarded. We strive to build relationships that last a lifetime. The result: our farmers enjoy a sustainable way of life, and we have access to their incredible coffees.</p>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <h5>Tangletown Coffee Roaster History</h5>
-      <p>Tangeltown Coffee Roasters opened its doors in August of 2000 in Seattle's Green Lake neighborhood. Starting off small, founder John Doe roasted right out of his Greenlake coffee shop, sharing his passion directly with our local neighborhood customers. Since then he's managed to grow his business and offer incredible coffee throughout the country, partnering with some of the best coffee farmers in the world.</p><br>
-      <p>With an emphasis on quality and relationships, Tangletown Coffee has established itself in some of Seattle's most dynamic neighborhoods. Our location fosters a strong sense of community and respect for coffee. We offer a welcome environment and great place to sample some of Seattle's most exceptional beans.</p>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-      <h5>Jane Doe, Master Coffee Roaster</h5>
-      <p>Even a good bean can end up bad. Though well-processed and lovingly grown, a coffee bean depends on the roaster and the roasting process to help it shine. If roasted too dark, the sugars and acidic qualities will be burned to a crisp, leaving behind an oily, flavorless wisp of former granduer. If roasted light, coffee will taste tangy and sour.</p><br>
-      <p>Each coffee is sample roasted and cupped multiple times before being sent to our production roaster. This allows an opportunity to experiment with the unroasted coffee and find the perfect temperature and time by which to bring out all of the delicious flavors. The process requires total attention and a strong knowledge of the coffee being used.</p>
-    </div>
-  </div>
-  </div>
-  <!-- Add Google Maps -->
-  <div id="googleMap"></div>
-  <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <br>
-  <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com" target="_blank" data-toggle="tooltip" title="Visit us on Facebook">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.instagram.com" target="_blank" data-toggle="tooltip" title="Visit us on Instagram">
-    <i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://www.snapchat.com/" target="_blank" data-toggle="tooltip" title="Visit us on Snapchat">
-    <i class="fa fa-snapchat w3-hover-opacity"></i></a>
-    <a href="https://www.pinterest.com/" target="_blank" data-toggle="tooltip" title="Visit us on Pinterest">
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-    <a href="https://www.twitter.com" target="_blank" data-toggle="tooltip" title="Visit us on Twitter">
-    <i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/" target="_blank" data-toggle="tooltip" title="Visit us on LinkedIn">
-    <i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <h6>Made by Bill Vasilopoulos 2017 <a href="https://www.billvas.com" data-toggle="tooltip" title="Visit my portfolio site">www.billvas.com</a></h6>
-  </footer>
-  </div>
-  </footer>
-  <!--Jquery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!--Migrate older jQuery code to jQuery 3.0+-->
-  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-  <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
-  <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"><\/script>')</script>
-      <!--Bootstrap-->
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-       <!--Jquery validation plugin-->
-       <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-       <!--additional methods credit card plugins-->
-       <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-       <!--<script src="js/vendor/jquery.validate.min.js"></script>-->
+    <!-- Add Google Maps -->
+    <div id="googleMap"></div>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <br>
+        <span class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com" target="_blank" data-toggle="tooltip" title="Visit us on Facebook">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com" target="_blank" data-toggle="tooltip" title="Visit us on Instagram">
+                <i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://www.snapchat.com/" target="_blank" data-toggle="tooltip" title="Visit us on Snapchat">
+                <i class="fa fa-snapchat w3-hover-opacity"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank" data-toggle="tooltip" title="Visit us on Pinterest">
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://www.twitter.com" target="_blank" data-toggle="tooltip" title="Visit us on Twitter">
+                <i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" data-toggle="tooltip" title="Visit us on LinkedIn">
+                <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <h6>Made by Bill Vasilopoulos 2017 <a href="https://www.billvas.com" data-toggle="tooltip" title="Visit my portfolio site">www.billvas.com</a></h6>
+        </span>
+    </footer>
+
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Migrate older jQuery code to jQuery 3.0+-->
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+    <script>
+        window.jQuery || document.write(
+            '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"><\/script>')
+
+    </script>
+    <!--Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Jquery validation plugin-->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <!--additional methods credit card plugins-->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <!--<script src="js/vendor/jquery.validate.min.js"></script>-->
     <script src="js/main.js"></script>
     <script src="js/shop.js"></script>
     <script src="js/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4fFKPM5T-9AYR5x1DvqENwS3Wkh-c55Q&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4fFKPM5T-9AYR5x1DvqENwS3Wkh-c55Q&callback=myMap">
+    </script>
 </body>
+
 </html>

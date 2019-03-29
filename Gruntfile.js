@@ -6,59 +6,65 @@
   "grunt responsive_images" re-processes images without removing the old ones
 */
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
     grunt.initConfig({
-      responsive_images: {
-        dev: {
-          options: {
-            engine: 'im',
-            sizes: [{
-              width: 1600,
-              suffix: '_large_2x',
-              quality: 30
-            }]
-          },
+        responsive_images: {
+            dev: {
+                options: {
+                    engine: 'im',
+                    sizes: [
+                        {
+                            width: 1600,
+                            suffix: '_large_2x',
+                            quality: 30
+                        }
+                    ]
+                },
 
-          /*
+                /*
           You don't need to change this part if you don't change
           the directory structure.
           */
-          files: [{
-            expand: true,
-            src: ['*.{gif,jpg,jpeg,png}'],
-            cwd: 'images/',
-            dest: 'images_comp/'
-          }]
+                files: [
+                    {
+                        expand: true,
+                        src: ['*.{gif,jpg,jpeg,png}'],
+                        cwd: 'images/',
+                        dest: 'images_comp/'
+                    }
+                ]
+            }
+        },
+
+        /* Clear out the images directory if it exists */
+        clean: {
+            dev: {
+                src: ['images_comp']
+            }
+        },
+
+        /* Generate the images directory if it is missing */
+        mkdir: {
+            dev: {
+                options: {
+                    create: ['images_comp']
+                }
+            }
+        },
+
+        /* Copy the "fixed" images that don't go through processing into the images/directory */
+        copy: {
+            dev: {
+                files: [
+                    {
+                        expand: true,
+                        src: 'images/fixed/*.{gif,jpg,jpeg,png}',
+                        dest: 'images_comp/'
+                    }
+                ]
+            }
         }
-      },
-
-      /* Clear out the images directory if it exists */
-      clean: {
-        dev: {
-          src: ['images_comp'],
-        },
-      },
-
-      /* Generate the images directory if it is missing */
-      mkdir: {
-        dev: {
-          options: {
-            create: ['images_comp']
-          },
-        },
-      },
-
-      /* Copy the "fixed" images that don't go through processing into the images/directory */
-      copy: {
-        dev: {
-          files: [{
-            expand: true,
-            src: 'images/fixed/*.{gif,jpg,jpeg,png}',
-            dest: 'images_comp/'
-          }]
-        },
-      },
     });
 
     grunt.loadNpmTasks('grunt-responsive-images');
@@ -67,4 +73,4 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-mkdir');
     grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
 
-  };
+};
